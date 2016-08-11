@@ -57,8 +57,9 @@
 }
 
 + (void)getDataFromNet {
+    AVUser *currentUser = [AVUser currentUser];
     AVQuery *query = [AVQuery queryWithClassName:@"runNote"];
-//    [query whereKey:@"speed" equalTo:@"0.00"];
+    [query whereKey:@"userName" equalTo:currentUser.username];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         NSArray<AVObject *> *objs = objects;
         [QYDataBaseTool updateStatementsSql:Delete_MyRunNote withParsmeters:nil block:^(BOOL isOk, NSString *errorMsg) {

@@ -313,6 +313,8 @@
     
 //    NSDictionary *plistDict = @{@"title" : titleString, @"time" : _timeNow.text, @"distance" : _kmNumber.text, @"speed" : _speedNumber.text,@"isHome" : @YES};
     AVObject *runNote = [[AVObject alloc] initWithClassName:@"runNote"];
+    AVUser *currentUser = [AVUser currentUser];
+    [runNote setObject:currentUser.username forKey:@"userName"];
     [runNote setObject:titleString forKey:@"title"];
     [runNote setObject:_timeNow.text forKey:@"time"];
     [runNote setObject:_kmNumber.text forKey:@"distance"];
