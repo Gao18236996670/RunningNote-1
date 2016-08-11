@@ -36,6 +36,10 @@ static NSString *cellIdentifierOut = @"recordCellHomeOut";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.alpha = 1;
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    
     [self.navigationController setNavigationBarHidden:NO];
     [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
     //注册Cell

@@ -130,6 +130,8 @@
     [self hiddenAllLabel];
     self.stopButton.enabled = NO;
     self.navigationController.navigationBarHidden = YES;
+    
+    [self.locationService startUserLocationService];
     // Do any additional setup after loading the view.
 }
 

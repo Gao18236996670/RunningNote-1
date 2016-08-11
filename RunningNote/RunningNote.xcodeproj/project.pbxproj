@@ -71,16 +71,16 @@
 		CCC7199F1D26A81D0033FCB2 /* RUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC7199D1D26A81D0033FCB2 /* RUserModel.m */; };
 		CCC719A41D26A8600033FCB2 /* RChangePassWorldVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC719A11D26A8600033FCB2 /* RChangePassWorldVC.m */; };
 		CCC719A51D26A8600033FCB2 /* RUserInfoTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC719A31D26A8600033FCB2 /* RUserInfoTableVC.m */; };
+		CCD4584E1D5C70D000A9A3F7 /* Login_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD4584D1D5C70D000A9A3F7 /* Login_bg.png */; };
+		CCD458521D5C73AC00A9A3F7 /* Login_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD458511D5C73AC00A9A3F7 /* Login_btn.png */; };
 		CCDCACE61D2E8F47001A3112 /* QYDataBaseTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDCACE51D2E8F47001A3112 /* QYDataBaseTool.m */; };
 		CCE683661D46FEDF00E025AA /* RVoiceRecordingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE683651D46FEDF00E025AA /* RVoiceRecordingView.m */; };
 		CCE6836A1D46FF0600E025AA /* RVoiceRecordingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCE683691D46FF0600E025AA /* RVoiceRecordingView.xib */; };
 		CCE6836D1D47037E00E025AA /* RAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE6836C1D47037E00E025AA /* RAudioRecorder.m */; };
 		CCE683701D474F7200E025AA /* RAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE6836F1D474F7200E025AA /* RAudioPlayer.m */; };
-		CCEA57081D5B4A3F005C5139 /* charCell_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CCEA57071D5B4A3F005C5139 /* charCell_bg.png */; };
 		CCEA9AEA1D40EC3F000B287E /* RFriendsInfor.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEA9AE81D40EC3F000B287E /* RFriendsInfor.m */; };
 		CCEA9AED1D40ECE1000B287E /* RFriends-Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEA9AEC1D40ECE1000B287E /* RFriends-Chat.storyboard */; };
 		CCEA9AEF1D40EE45000B287E /* bg_qiang.png in Resources */ = {isa = PBXBuildFile; fileRef = CCEA9AEE1D40EE45000B287E /* bg_qiang.png */; };
-		CCEA9AF31D40F6E6000B287E /* bg_chat.png in Resources */ = {isa = PBXBuildFile; fileRef = CCEA9AF21D40F6E6000B287E /* bg_chat.png */; };
 		CCEB0D1F1D4AE7770074B6CF /* RUserRecordCellOut.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCEB0D1E1D4AE7770074B6CF /* RUserRecordCellOut.xib */; };
 		CCEB0D211D4AE9A70074B6CF /* bg_record_cell.png in Resources */ = {isa = PBXBuildFile; fileRef = CCEB0D201D4AE9A70074B6CF /* bg_record_cell.png */; };
 		CCEB0D231D4AEA7A0074B6CF /* bg_record_cellout.png in Resources */ = {isa = PBXBuildFile; fileRef = CCEB0D221D4AEA7A0074B6CF /* bg_record_cellout.png */; };
@@ -164,9 +164,9 @@
 		0BCA6D8A9FFD458494B7C4EC /* libPods-RunningNoteTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RunningNoteTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		166A8D1783366D0CC901FE3D /* Pods-RunningNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunningNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-RunningNote/Pods-RunningNote.release.xcconfig"; sourceTree = "<group>"; };
 		59779D7800BA96DDC1255A76 /* Pods-RunningNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunningNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RunningNote/Pods-RunningNote.debug.xcconfig"; sourceTree = "<group>"; };
+		6ABD3F81C8D589F82CE66C54 /* libPods-RunningNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RunningNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D62C9071F16F4D8CA519B5 /* Pods-RunningNoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunningNoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RunningNoteUITests/Pods-RunningNoteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		823B0B641BE9E7415FF1F363 /* libPods-RunningNoteUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RunningNoteUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6ABD3F81C8D589F82CE66C54 /* libPods-RunningNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RunningNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D54EDECEC167216805D800 /* libPods-RunningNoteUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RunningNoteUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9874743833345D78F728A916 /* Pods-RunningNoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunningNoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RunningNoteTests/Pods-RunningNoteTests.release.xcconfig"; sourceTree = "<group>"; };
 		C1B75EDBB8334A3F8915D6EE /* libPods-RunningNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RunningNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +251,8 @@
 		CCC719A11D26A8600033FCB2 /* RChangePassWorldVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RChangePassWorldVC.m; sourceTree = "<group>"; };
 		CCC719A21D26A8600033FCB2 /* RUserInfoTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RUserInfoTableVC.h; sourceTree = "<group>"; };
 		CCC719A31D26A8600033FCB2 /* RUserInfoTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RUserInfoTableVC.m; sourceTree = "<group>"; };
+		CCD4584D1D5C70D000A9A3F7 /* Login_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login_bg.png; sourceTree = "<group>"; };
+		CCD458511D5C73AC00A9A3F7 /* Login_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login_btn.png; sourceTree = "<group>"; };
 		CCDCACE31D2E8F47001A3112 /* DataBaseFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataBaseFile.h; path = RunningNote/DataBaseFile.h; sourceTree = SOURCE_ROOT; };
 		CCDCACE41D2E8F47001A3112 /* QYDataBaseTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QYDataBaseTool.h; path = RunningNote/QYDataBaseTool.h; sourceTree = SOURCE_ROOT; };
 		CCDCACE51D2E8F47001A3112 /* QYDataBaseTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QYDataBaseTool.m; path = RunningNote/QYDataBaseTool.m; sourceTree = SOURCE_ROOT; };
@@ -261,12 +263,10 @@
 		CCE6836C1D47037E00E025AA /* RAudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAudioRecorder.m; sourceTree = "<group>"; };
 		CCE6836E1D474F7200E025AA /* RAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAudioPlayer.h; sourceTree = "<group>"; };
 		CCE6836F1D474F7200E025AA /* RAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAudioPlayer.m; sourceTree = "<group>"; };
-		CCEA57071D5B4A3F005C5139 /* charCell_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charCell_bg.png; sourceTree = "<group>"; };
 		CCEA9AE71D40EC3F000B287E /* RFriendsInfor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFriendsInfor.h; sourceTree = "<group>"; };
 		CCEA9AE81D40EC3F000B287E /* RFriendsInfor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFriendsInfor.m; sourceTree = "<group>"; };
 		CCEA9AEC1D40ECE1000B287E /* RFriends-Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "RFriends-Chat.storyboard"; sourceTree = "<group>"; };
 		CCEA9AEE1D40EE45000B287E /* bg_qiang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_qiang.png; sourceTree = "<group>"; };
-		CCEA9AF21D40F6E6000B287E /* bg_chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_chat.png; sourceTree = "<group>"; };
 		CCEB0D1E1D4AE7770074B6CF /* RUserRecordCellOut.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RUserRecordCellOut.xib; sourceTree = "<group>"; };
 		CCEB0D201D4AE9A70074B6CF /* bg_record_cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_record_cell.png; sourceTree = "<group>"; };
 		CCEB0D221D4AEA7A0074B6CF /* bg_record_cellout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_record_cellout.png; sourceTree = "<group>"; };
@@ -601,6 +601,8 @@
 		CCEBDD941D23A6CC000E535D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CCD458511D5C73AC00A9A3F7 /* Login_btn.png */,
+				CCD4584D1D5C70D000A9A3F7 /* Login_bg.png */,
 				CCEB0D201D4AE9A70074B6CF /* bg_record_cell.png */,
 				CCEB0D221D4AEA7A0074B6CF /* bg_record_cellout.png */,
 				CC342AD71D4D86D800D3F919 /* circle.png */,
@@ -897,15 +899,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD458521D5C73AC00A9A3F7 /* Login_btn.png in Resources */,
 				CCEBDB6A1D463419007FE53C /* FunctionView.xib in Resources */,
 				CC474B2B1D36742400CAED15 /* chat_32.png in Resources */,
 				CC474B261D3651CF00CAED15 /* share_ben_s.png in Resources */,
 				CCEF77FF1D39129E00BEDBE0 /* bg_blue.png in Resources */,
 				CCF06C8B1D4A40C500E57A59 /* friendcell_bg.png in Resources */,
 				CC474B291D36740300CAED15 /* address_32.png in Resources */,
-				CCEA570A1D5B5CAD005C5139 /* charCell_bg.png in Resources */,
 				CC342AD61D4B08CB00D3F919 /* circle_bg.png in Resources */,
 				CCEBDE011D23E7D1000E535D /* fxpy_image.png in Resources */,
+				CCD4584E1D5C70D000A9A3F7 /* Login_bg.png in Resources */,
 				CCEB0D231D4AEA7A0074B6CF /* bg_record_cellout.png in Resources */,
 				CCEB0D211D4AE9A70074B6CF /* bg_record_cell.png in Resources */,
 				CC31D31F1D35163800FA9997 /* RPublishedVC.xib in Resources */,
@@ -1367,7 +1370,6 @@
 		};
 		CCEBDDC61D23A6CC000E535D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76D62C9071F16F4D8CA519B5 /* Pods-RunningNoteUITests.release.xcconfig */;
 			baseConfigurationReference = FBC8607893D787D397B42AF0 /* Pods-RunningNoteUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = RunningNoteUITests/Info.plist;
