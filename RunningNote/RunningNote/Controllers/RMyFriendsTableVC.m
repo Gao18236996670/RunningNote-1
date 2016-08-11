@@ -24,7 +24,7 @@ static NSString *identifier = @"friendmycell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self.tabBarController setHidesBottomBarWhenPushed:YES];
+    [self.tabBarController setHidesBottomBarWhenPushed:YES];
     
     //添加好友的按钮
     UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addFriend)];
@@ -83,7 +83,7 @@ static NSString *identifier = @"friendmycell";
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
-//    self.tabBarController.tabBar.hidden = YES;
+    self.tabBarController.tabBar.hidden = YES;
     
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.alpha = 1;
