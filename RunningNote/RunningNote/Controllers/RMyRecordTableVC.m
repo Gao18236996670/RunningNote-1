@@ -78,6 +78,9 @@
         RUserRunRecord *recordAverage = [RUserRunRecord getbestData:@"speed"];
         _averageLabel.text = [NSString stringWithFormat:@"%g",recordAverage.speed];
         
+        RUserRunRecord *recordDeserve = [RUserRunRecord getbestData:@"pace"];
+        _deserveLabel.text = recordDeserve.pace;
+        
 //        [QYDataBaseTool selectStatementsSql:[SELECT_MyRunNote_BY stringByAppendingString:@"distance"] withParsmeters:nil forMode:@"RUserRunRecord" block:^(NSMutableArray *resposeOjbc, NSString *errorMsg) {
 //            if (resposeOjbc) {
 //                RUserRunRecord *record = resposeOjbc.lastObject;
@@ -101,14 +104,16 @@
             NSDictionary *dict = [resposeOjbc firstObject];
             //            NSLog(@"%@",[dict[@"sum(time)"] stringValue]);
             if (![dict[@"sum(time)"] isKindOfClass:[NSNull class]]) {
-                _totalTime.text = [dict[@"sum(time)"] stringValue];
+                NSString *string = [dict[@"sum(time)"] stringValue];
+                CGFloat times = [string floatValue] / 60.0;
+                _totalTime.text = [NSString stringWithFormat:@"%.2f",times];
             }
         }];
         [QYDataBaseTool selectStatementsSql:SELECT_MyRunNote_SUM_Calorie withParsmeters:nil forMode:nil block:^(NSMutableArray *resposeOjbc, NSString *errorMsg) {
             NSDictionary *dict = [resposeOjbc firstObject];
             //            NSLog(@"%@",[dict[@"sum(calorie)"] stringValue]);
             if (![dict[@"sum(calorie)"] isKindOfClass:[NSNull class]]) {
-                _totalTime.text = [dict[@"sum(calorie)"] stringValue];
+                _totalCalorie.text = [dict[@"sum(calorie)"] stringValue];
             }
         }];
     }

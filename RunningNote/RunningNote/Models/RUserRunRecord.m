@@ -24,6 +24,7 @@
         _time = dict[@"time"];
         _distance = [dict[@"distance"] floatValue];
         _speed = [dict[@"speed"] floatValue];
+        _pace = dict[@"pace"];
         _isHome = [dict[@"isHome"] integerValue];
     }
     return self;
@@ -53,6 +54,13 @@
             }
         }];
     }
+    if ([data isEqualToString:@"pace"]) {
+        [QYDataBaseTool selectStatementsSql:[SELECT_MyRunNote_BY stringByAppendingString:@"pace"] withParsmeters:nil forMode:@"RUserRunRecord" block:^(NSMutableArray *resposeOjbc, NSString *errorMsg) {
+            if (resposeOjbc) {
+                record = resposeOjbc.lastObject;
+            }
+        }];
+    }
     return record;
 }
 
@@ -72,6 +80,7 @@
             [mulDict GHB_setObject:[obj objectForKey:@"speed"] forKey:@"speed"];
             [mulDict GHB_setObject:[obj objectForKey:@"pace"] forKey:@"pace"];
             [mulDict GHB_setObject:[obj objectForKey:@"calorie"] forKey:@"calorie"];
+            [mulDict GHB_setObject:[obj objectForKey:@"deserve"] forKey:@"deserve"];
             [mulDict GHB_setObject:[obj objectForKey:@"isHome"] forKey:@"isHome"];
             
             [QYDataBaseTool updateStatementsSql:INSERT_MyRunNote_SQL withParsmeters:mulDict block:^(BOOL isOk, NSString *errorMsg) {

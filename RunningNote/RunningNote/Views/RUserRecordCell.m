@@ -24,7 +24,7 @@
 - (void)setRecoedModel:(RUserRunRecord *)recoedModel {
     _recoedModel = recoedModel;
     _title.text = recoedModel.title;
-    _speed.text = [NSString stringWithFormat:@"%g",recoedModel.speed];
+    _speed.text = [NSString stringWithFormat:@"%gkm/h",recoedModel.speed];
     _time.text = recoedModel.time;
     _distance.text = [NSString stringWithFormat:@"%g",recoedModel.distance];
     _isHomeSegment.selectedSegmentIndex = recoedModel.isHome;
