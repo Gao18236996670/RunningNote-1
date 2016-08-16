@@ -278,7 +278,7 @@ static NSString *identifier = @"userInfoCell";
         }
     }];
     if ((_nickName.text == nil) | [_nickName.text isEqualToString:@"必填"] | (_height.text == nil) | [_height.text isEqualToString:@"必填"] | (_weight.text == nil) | [_weight.text isEqualToString:@"必填"]) {
-        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提示" message:@"请填写昵称&身高&体重" preferredStyle:(UIAlertControllerStyleAlert)];
+        UIAlertController *alertVC = [UIAlertController alertControllerWithTitle:@"提示" message:@"请填写昵称&身高&体重(为了精确计算您的运动消耗，请准确填写身高和体重)" preferredStyle:(UIAlertControllerStyleAlert)];
         UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:(UIAlertActionStyleCancel) handler:nil];
         [alertVC addAction:action];
         [self presentViewController:alertVC animated:YES completion:nil];

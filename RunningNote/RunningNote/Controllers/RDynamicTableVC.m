@@ -28,6 +28,8 @@
 
 @property (nonatomic)          NSInteger sectionNumber;//点击的评论为哪条的
 
+@property (nonatomic, strong) UIView *bottomView;//底部输入评论的View
+
 @end
 
 @implementation RDynamicTableVC
@@ -224,6 +226,7 @@ static NSString *footerIdentifier = @"myFootView";
     _commentText.delegate	    = self;
     _commentText.font		= [UIFont systemFontOfSize:17.0];
     [commentsView addSubview:_commentText];
+    _bottomView = commentsView;
     [self.view.window addSubview:commentsView];//添加到window上或者其他视图也行，只要在视图以外就好了
     [_commentText becomeFirstResponder];//让textView成为第一响应者（第一次）这次键盘并未显示出来，（个人觉得这里主要是将commentsView设置为commentText的inputAccessoryView,然后再给一次焦点就能成功显示）
 }
@@ -261,6 +264,11 @@ static NSString *footerIdentifier = @"myFootView";
     SVProgressHUD.minimumDismissTimeInterval = 2.0;
     [SVProgressHUD showSuccessWithStatus:@"评论成功,刷新数据"];
     [self.tableView.mj_header beginRefreshing];
+}
+
+- (void)dealloc {
+    [_bottomView removeFromSuperview];
+    _bottomView = nil;
 }
 
 

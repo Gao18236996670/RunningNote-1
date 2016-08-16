@@ -12,6 +12,7 @@
 #import "AppDelegate.h"
 #import <AVUser.h>
 #import "RMessageManager.h"
+#import "RUserModel.h"
 
 @interface RSetTableVC ()
 
@@ -66,7 +67,9 @@
     }
     if (indexPath.section == 4 ) {
         //退出登录
-        NSLog(@"退出登录");
+//        NSLog(@"退出登录");
+        RUserModel *model = [RUserModel sharedUserInfo];
+        model = nil;
         [AVUser logOut];
         [AVUser currentUser].username = nil;
         [AVUser currentUser].password = nil;
@@ -76,6 +79,7 @@
         manager = nil;
         manager.clint = nil;
         manager.delegate = nil;
+        
     }
     
     
