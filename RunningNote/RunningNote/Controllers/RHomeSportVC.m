@@ -221,6 +221,7 @@
 -(void)runAction{
     _milliSeconds++;
     NSInteger timeNum;//不能设初值，否则释放不掉，程序就会有问题
+    timeNum = INT_MAX;
     if (((_milliSeconds - 1) % 100) == 0) {
         timeNum = (_milliSeconds - 1) / 100;
     }
