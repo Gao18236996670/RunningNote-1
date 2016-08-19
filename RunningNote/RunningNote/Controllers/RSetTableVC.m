@@ -63,6 +63,12 @@
         }else if (indexPath.row == 1){
             //清除缓存
             NSLog(@"清除缓存");
+            NSString *cachePath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject;
+            CGFloat folderSize = [self fileSizeAtPath:cachePath];
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:[NSString stringWithFormat:@"缓存大小为%.2f",folderSize] preferredStyle:(UIAlertControllerStyleAlert)];
+            UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:(UIAlertActionStyleDefault) handler:nil];
+            [alert addAction:action];
+            [self presentViewController:alert animated:YES completion:nil];
         }
     }
     if (indexPath.section == 4 ) {
@@ -81,9 +87,15 @@
         manager.delegate = nil;
         
     }
-    
-    
-    
+}
+
+- (float)fileSizeAtPath:(NSString *)path{
+    NSFileManager *fileManager=[NSFileManager defaultManager];
+    if([fileManager fileExistsAtPath:path]){
+        long long size=[fileManager attributesOfItemAtPath:path error:nil].fileSize;
+        return size/1024.0/1024.0;
+    }
+    return 0;
 }
 
 #pragma mark - Table view data source

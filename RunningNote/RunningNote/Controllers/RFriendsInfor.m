@@ -35,9 +35,12 @@
     [_iconBtn setBackgroundImage:[UIImage imageWithData:imageData] forState:UIControlStateNormal];
 //    _addressLabel.text = localData[@"address"];
     _lvLabel.text = @"初级跑者";
-    
-    NSString *totalDistanceStr = [localData[@"totalDistance"] stringValue];
-    _totalDistance.text = [NSString stringWithFormat:@"%@公里",totalDistanceStr];
+    if (localData[@"totalDistance"] == nil) {
+        _totalDistance.text = @"0公里";
+    }else {
+        NSString *totalDistanceStr = [localData[@"totalDistance"] stringValue];
+        _totalDistance.text = [NSString stringWithFormat:@"%@公里",totalDistanceStr];
+    }
     NSString *totalTimeStr = [localData[@"totalTime"] stringValue];
     _totalTime.text = [NSString stringWithFormat:@"%@小时",totalTimeStr];
 
